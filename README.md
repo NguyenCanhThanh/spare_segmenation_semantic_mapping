@@ -1,1 +1,1 @@
-# spare_segmenation_semantic_mapping
+# S3M-SLAM
