@@ -281,7 +281,7 @@ code {
                 <tr>
                     <td width=900px>
                       <center>
-                          <a href="docs/images/ProposedSystem.png"><img src = "docs/images/ProposedSystem.png" width="1200px"></img></href></a><br>
+                          <a href="docs/images/ProposedSystem.png"><img src = "docs/images/ProposedSystem.png" width="900px"></img></href></a><br>
                     </center>
                     </td>
                 </tr>
@@ -297,13 +297,13 @@ code {
                 <tr>
                     <td width=600px>
                       <center>
-                          <a href="./resources/images/SE3_states.png"><img src = "./resources/images/LieGroupStates.jpg" width="900px"></img></href></a><br>
+                          <a href="docs/images/poseEst.png"><img src = "docs/images/poseEst.png" width="900px"></img></href></a><br>
                     </center>
                     </td>
                 </tr>
                     <td width=900px>
                       <center>
-                          <span style="font-size:18px"><i>The dynamics of many robots are described in terms of their robot states on Lie groups, and satisfy conservation of energy principles, e.g. via Hamiltonian formulation.</i>
+                          <span style="font-size:18px"><i>3D Pose Estimation.</i>
                     </center>
                     </td>
                 </tr>
@@ -313,13 +313,13 @@ code {
                 <tr>
                     <td width=900px>
                       <center>
-                          <a href="./resources/images/SE3_states.png"><img src = "./resources/images/SE3_Ham.jpg" width="900px"></img></href></a><br>
+                          <a href="docs/images/semseg.png"><img src = "docs/images/semseg.png" width="900px"></img></href></a><br>
                     </center>
                     </td>
                 </tr>
                     <td width=900px>
                       <center>
-                          <span style="font-size:18px"><i>For example, the states of ground, aerial, and underwater vehicles are described by their SE(3) pose and generalized velocity, which evolves on the SE(3) manifold,</i>
+                          <span style="font-size:18px"><i>Structure and method for semantic extraction</i>
                     </center>
                     </td>
                 </tr>
@@ -329,33 +329,18 @@ code {
                 <tr>
                     <td width=900px>
                       <center>
-                          <a href="./resources/images/arch.png"><img src = "./resources/images/LieGroup_ModelDesign.jpg" width="900px"></img></href></a><br>
+                          <a href="docs/images/fusion.png"><img src = "docs/images/fusion.png" width="900px"></img></href></a><br>
                     </center>
                     </td>
                 </tr>
                     <td width=900px>
                       <center>
-                          <span style="font-size:18px"><i> To enforce these constraints by construction, we embed these constraints in the architecture of the parametric function approximated dynamics</i>
+                          <span style="font-size:18px"><i> To fuse semantic information from multiple view, we introduced semantic fusion scheme.</i>
                     </center>
                     </td>
                 </tr>
             </table>
-            <br><br>
-                <table align=center width=900px>
-                <tr>
-                    <td width=900px>
-                      <center>
-                          <a href="./resources/images/neural_ode_dl.png"><img src = "./resources/images/neural_ode_dl.jpg" width="900px"></img></href></a><br>
-                    </center>
-                    </td>
-                </tr>
-                    <td width=900px>
-                      <center>
-                          <span style="font-size:18px"><i> We place the approximated dynamics function in a neural ODE framework (Chen et. al., NeurIPS'18) which predicts the state at a future time using an ODE solver and back-propagates the loss gradients efficiently using adjoint method.</i>
-                    </center>
-                    </td>
-                </tr>
-            </table>
+           
             <br>
             <table align=center width=800>
                 
@@ -388,6 +373,8 @@ code {
                 <tr>
                     <td width=900px>
                       <center>
+                          <a href="docs/images/fusion.png"><img src = "docs/images/fusion.png" width="900px"></img></href></a><br>
+                      </center>
 <!--
                     <a href="./resources/gif/data1.gif"><img src = "./resources/gif/data1.gif" width="260px"></img></href></a>
                     <a href="./resources/gif/data2.gif"><img src = "./resources/gif/data2.gif" width="260px"></img></href></a>
@@ -399,7 +386,7 @@ code {
                     <a href="./resources/gif/data2.gif"><img src = "./resources/gif/data21.gif" width="260px"></img></href></a>
                     <a href="./resources/gif/data2.gif"><img src = "./resources/gif/data4.gif" width="260px"></img></href></a>
 -->
-                <video  width="440" muted autoplay loop>
+                <!-- <video  width="440" muted autoplay loop>
                 <source src="resources/images/data_1.mp4" type="video/mp4">
                 Your browser does not support the video tag.
                 </video>
@@ -422,136 +409,9 @@ code {
                           <span style="font-size:18px"><i> For quadrotors, we use our customized PX4 quadrotor and collect training data from 9 flights between waypoints.</i>
                     </center>
                     </td>
-                </tr>
+                </tr> -->
             </table>
-            <br><br>
-<table align=center width=900px>
-                <tr>
-                    <td width=900px>
-                      <center>
-<!--
-                    <a href="./resources/gif/data1.gif"><img src = "./resources/gif/data1.gif" width="260px"></img></href></a>
-                    <a href="./resources/gif/data2.gif"><img src = "./resources/gif/data2.gif" width="260px"></img></href></a>
-                    <a href="./resources/gif/data2.gif"><img src = "./resources/gif/data11.gif" width="260px"></img></href></a>
-                    <a href="./resources/gif/data2.gif"><img src = "./resources/gif/data15.gif" width="260px"></img></href></a>
-                    <a href="./resources/gif/data2.gif"><img src = "./resources/gif/data14.gif" width="260px"></img></href></a>
-                    <a href="./resources/gif/data2.gif"><img src = "./resources/gif/data13.gif" width="260px"></img></href></a>
-                    <a href="./resources/gif/data2.gif"><img src = "./resources/gif/data18.gif" width="260px"></img></href></a>
-                    <a href="./resources/gif/data2.gif"><img src = "./resources/gif/data21.gif" width="260px"></img></href></a>
-                    <a href="./resources/gif/data2.gif"><img src = "./resources/gif/data4.gif" width="260px"></img></href></a>
--->
-                <video  width="440" muted autoplay loop>
-                <source src="resources/images/eval_1.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-                </video>
-                                          <video  width="440" muted autoplay loop>
-                <source src="resources/images/eval_2.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-                </video>
-                    <br>
-                                          <video  width="440" muted autoplay loop>
-                <source src="resources/images/eval_3.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-                </video>
-<a href="./resources/images/eval_2.gif"><img src = "./resources/images/eval_2.gif" width="440px"></img></href></a>
-
-                    </center>
-                    </td>
-                </tr>
-                    <td width=900px>
-                      <center>
-                          <span style="font-size:18px"><i> After learning the dynamics from data, we design an energy-based controller for trajectory tracking. We verify our controller design with circle, lemniscate and piecewise-linear trajectories using the learned Halmiltonian-based dynamics.</i>
-                    </center>
-                    </td>
-                </tr>
-            </table>
-
-              </tr>
-
-            </table>
-          <br><br>
-                <table align=center width=900px>
-                <tr>
-                    <td width=900px>
-                      <center>
-<!--
-                    <a href="./resources/gif/data1.gif"><img src = "./resources/gif/data1.gif" width="260px"></img></href></a>
-                    <a href="./resources/gif/data2.gif"><img src = "./resources/gif/data2.gif" width="260px"></img></href></a>
-                    <a href="./resources/gif/data2.gif"><img src = "./resources/gif/data11.gif" width="260px"></img></href></a>
-                    <a href="./resources/gif/data2.gif"><img src = "./resources/gif/data15.gif" width="260px"></img></href></a>
-                    <a href="./resources/gif/data2.gif"><img src = "./resources/gif/data14.gif" width="260px"></img></href></a>
-                    <a href="./resources/gif/data2.gif"><img src = "./resources/gif/data13.gif" width="260px"></img></href></a>
-                    <a href="./resources/gif/data2.gif"><img src = "./resources/gif/data18.gif" width="260px"></img></href></a>
-                    <a href="./resources/gif/data2.gif"><img src = "./resources/gif/data21.gif" width="260px"></img></href></a>
-                    <a href="./resources/gif/data2.gif"><img src = "./resources/gif/data4.gif" width="260px"></img></href></a>
--->
-                <video  width="440" muted autoplay loop>
-                <source src="resources/images/data_1.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-                </video>
-                         <a href="./resources/images/Drone1.jpg"><img src = "./resources/images/Drone2_soda.jpg" width="440px"></img></href></a> 
-                    <br>
-                                          <video  width="440" muted autoplay loop>
-                <source src="resources/images/data_2.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-                </video>
-                                          <video  width="440" muted autoplay loop>
-                <source src="resources/images/data_3.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-                </video>
-
-                    </center>
-                    </td>
-                </tr>
-                    <td width=900px>
-                      <center>
-                          <span style="font-size:18px"><i> If the dynamics change, e.g. by adding a coffee can to the quadrotor, we re-collect training data again and re-train the model for only 100 steps, starting from the previously-trained model.</i>
-                    </center>
-                    </td>
-                </tr>
-            </table>
-                        <br><br>
-<table align=center width=900px>
-                <tr>
-                    <td width=900px>
-                      <center>
-<!--
-                    <a href="./resources/gif/data1.gif"><img src = "./resources/gif/data1.gif" width="260px"></img></href></a>
-                    <a href="./resources/gif/data2.gif"><img src = "./resources/gif/data2.gif" width="260px"></img></href></a>
-                    <a href="./resources/gif/data2.gif"><img src = "./resources/gif/data11.gif" width="260px"></img></href></a>
-                    <a href="./resources/gif/data2.gif"><img src = "./resources/gif/data15.gif" width="260px"></img></href></a>
-                    <a href="./resources/gif/data2.gif"><img src = "./resources/gif/data14.gif" width="260px"></img></href></a>
-                    <a href="./resources/gif/data2.gif"><img src = "./resources/gif/data13.gif" width="260px"></img></href></a>
-                    <a href="./resources/gif/data2.gif"><img src = "./resources/gif/data18.gif" width="260px"></img></href></a>
-                    <a href="./resources/gif/data2.gif"><img src = "./resources/gif/data21.gif" width="260px"></img></href></a>
-                    <a href="./resources/gif/data2.gif"><img src = "./resources/gif/data4.gif" width="260px"></img></href></a>
--->
-                <video  width="440" muted autoplay loop>
-                <source src="resources/images/eval_soda_1.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-                </video>
-                                          <video  width="440" muted autoplay loop>
-                <source src="resources/images/eval_soda_2.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-                </video>
-                    <br>
-                                          <video  width="440" muted autoplay loop>
-                <source src="resources/images/eval_soda_3.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-                </video>
-<a href="./resources/images/eval_2.gif"><img src = "./resources/images/eval_soda_2.gif" width="440px"></img></href></a>
-
-                    </center>
-                    </td>
-                </tr>
-                    <td width=900px>
-                      <center>
-                          <span style="font-size:18px"><i> Our controller performs better now with the updated model, tracking circle, lemniscate and piecewise-linear trajectories.</i>
-                    </center>
-                    </td>
-                </tr>
-            </table>
-
+            
         <hr>
          <center><h1>Code</h1></center>
             <table align=center width=800px>
